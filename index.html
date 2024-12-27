@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Overlay for choosing "X" or "O" -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <h2>Pick Your Mark</h2>
+            <div class="choice">
+                <button id="chooseX" class="mark-button">X</button>
+                <button id="chooseO" class="mark-button">O</button>
+            </div>
+            <p>Remember: X goes first</p>
+        </div>
+    </div>
+
+    <!-- Winning Message Overlay -->
+    <div class="overlay" id="winOverlay" style="display: none;">
+        <div class="modal">
+            <h2 id="winMessage" style="margin-bottom: 0.5rem;">Player X Wins!</h2>
+            <button id="playAgainBtn" class="control-button">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Main Game Layout -->
+    <main>
+        <h1 style="margin-left: 25%; padding: 1rem;">Tic Tac Toe</h1>
+        <div class="info">
+            <div class="scoreboard">
+                <span class="same">X-Won's: <span id="scoreX">0</span></span>
+                <span class="same out1">O-Won's: <span  id="scoreO">0</span></span>
+                <span id="turnIndicator">Turn: Player X</span>
+            </div>
+           
+        </div>
+
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+
+        <div class="controls">
+          
+            <button id="quit-btn" class="control-button">Reset Game</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
